@@ -1,0 +1,106 @@
+@import url("https://use.typekit.net/pzz1abk.css");
+
+$Blue1: #001436;
+$Blue2: lighten($Blue1, 10%);
+$Blue3: lighten($Blue1, 20%);
+$Blue4: lighten($Blue1, 30%);
+$Blue5: lighten($Blue1, 40%);
+
+$Red: #e46d5d;
+
+$Heading: #e7eaef;
+$Text: #808ea8;
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "basic-sans", sans-serif;
+  // &:before {
+  //   content: '';
+  //   display: block;
+  //   background: url('/static/img/skyline.jpg') no-repeat scroll center / cover;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   z-index: 1;
+  // }
+  &:after {
+    content: '';
+    display: block;
+    background: linear-gradient($Blue1, lighten($Blue1, 5%));
+    // opacity: 0.5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+}
+
+h1,h2,h3 {
+  font-family: "minion-pro", serif;
+  font-weight: 700;
+  font-style: oblique;
+  color: $Heading;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 4.6rem;
+  letter-spacing: 2px;
+}
+
+p, ul {
+  font-size: 1rem;
+  line-height: 1.8rem;
+  color: $Text;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: $Heading;
+}
+
+.btn {
+  background: $Blue1;
+  color: white;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 40px auto;
+  display: inline-block;
+  text-align: center;
+}
+
+button {
+  &.link {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    font-size: inherit;
+    color: white;
+    font-weight: inherit;
+    font-style: oblique;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      cursor: pointer;
+      color: white;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+}
+
+.front {
+  position: relative;
+  z-index: 4;
+}

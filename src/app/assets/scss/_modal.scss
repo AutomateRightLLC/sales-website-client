@@ -1,0 +1,120 @@
+.modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 9;
+  overflow-y: scroll;
+  height: 100%;
+  transform: translateY(100%);
+  transition: all 0.5s ease-in-out;
+  &.show {
+    transform: translateY(0);
+    transition: all 0.5s ease-in-out;
+  }
+  .modalCopyWrap {
+    box-sizing: border-box;
+    padding: 40px;
+    margin: 40px;
+    border-radius: 10px;
+    background: white;
+    position: relative;
+    h1,h2,h3,p,ul {
+      color: $Blue1;
+    }
+    h2 {
+      font-size: 3rem;
+    }
+    h3 {
+      font-size: 2rem;
+    }
+    ul {
+      li {
+        margin: 20px 0;
+      }
+      strong {
+        display: block;
+        font-size: 1.2rem;
+      }
+    }
+    .modalCopy {
+      max-width: 800px;
+      margin: 0 auto;
+      color: $Blue1;
+    }
+    .cta {
+      background: $Blue1;
+      box-sizing: border-box;
+      padding: 100px;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 80px;
+      border-radius: 5px;
+      .image {
+        .imagePlaceholder {
+          width: 200px;
+          height: 200px;
+          background: grey;
+          border-radius: 99999px;
+        }
+      }
+      .copy {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      h3,p {
+        color: white;
+        margin: 0;
+      }
+      .btn {
+        background: white;
+        color: $Blue1;
+        margin: 0;
+      }
+    }
+  }
+  .close {
+    width: 60px;
+    height: 60px;
+    background: $Red;
+    padding: 0;
+    flex: 0 0 60px;
+    overflow: hidden;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    justify-self: flex-end;
+    border: none;
+    border-radius: 99999px;
+    z-index: 99;
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 3px;
+      border-radius: 9999px;
+      background: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transition: all 0.2s ease-in-out;
+    }
+    &:before {
+      transform: translate(-50%,-50%) rotate(45deg);
+    }
+    &:after {
+      transform: translate(-50%,-50%) rotate(-45deg);
+    }
+    &:hover {
+      background: darken($Red, 5%);
+      &:before,
+      &:after {
+        width: 22px;
+      }
+    }
+  }
+}
