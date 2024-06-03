@@ -11,11 +11,11 @@ const Home = () => {
 
   const serviceClick = (service: string) => {
     setService(service);
+    setShowModal(true);
   }
 
   const closeModal = () => {
     setShowModal(false);
-    setService('');
   }
 
   return (

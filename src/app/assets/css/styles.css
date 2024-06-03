@@ -32,7 +32,7 @@ h1 {
 }
 
 p, ul {
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.8rem;
   color: #808ea8;
   font-weight: 300;
@@ -232,65 +232,6 @@ button.link:hover {
   transform: translateY(0);
   transition: all 0.5s ease-in-out;
 }
-.modal .modalCopyWrap {
-  box-sizing: border-box;
-  padding: 40px;
-  margin: 40px;
-  border-radius: 10px;
-  background: white;
-  position: relative;
-}
-.modal .modalCopyWrap h1, .modal .modalCopyWrap h2, .modal .modalCopyWrap h3, .modal .modalCopyWrap p, .modal .modalCopyWrap ul {
-  color: #001436;
-}
-.modal .modalCopyWrap h2 {
-  font-size: 3rem;
-}
-.modal .modalCopyWrap h3 {
-  font-size: 2rem;
-}
-.modal .modalCopyWrap ul li {
-  margin: 20px 0;
-}
-.modal .modalCopyWrap ul strong {
-  display: block;
-  font-size: 1.2rem;
-}
-.modal .modalCopyWrap .modalCopy {
-  max-width: 800px;
-  margin: 0 auto;
-  color: #001436;
-}
-.modal .modalCopyWrap .cta {
-  background: #001436;
-  box-sizing: border-box;
-  padding: 100px;
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  margin-top: 80px;
-  border-radius: 5px;
-}
-.modal .modalCopyWrap .cta .image .imagePlaceholder {
-  width: 200px;
-  height: 200px;
-  background: grey;
-  border-radius: 99999px;
-}
-.modal .modalCopyWrap .cta .copy {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.modal .modalCopyWrap .cta h3, .modal .modalCopyWrap .cta p {
-  color: white;
-  margin: 0;
-}
-.modal .modalCopyWrap .cta .btn {
-  background: white;
-  color: #001436;
-  margin: 0;
-}
 .modal .close {
   width: 60px;
   height: 60px;
@@ -329,6 +270,75 @@ button.link:hover {
 }
 .modal .close:hover:before, .modal .close:hover:after {
   width: 22px;
+}
+
+.modalCopyWrap {
+  box-sizing: border-box;
+  padding: 40px;
+  margin: 40px;
+  border-radius: 10px;
+  background: white;
+  position: relative;
+}
+.modalCopyWrap h1, .modalCopyWrap h2, .modalCopyWrap h3, .modalCopyWrap p, .modalCopyWrap ul {
+  color: #001436;
+}
+.modalCopyWrap h2 {
+  font-size: 3rem;
+}
+.modalCopyWrap h3 {
+  font-size: 2rem;
+}
+.modalCopyWrap ul li {
+  margin: 20px 0;
+}
+.modalCopyWrap ul strong {
+  display: block;
+  font-size: 1.2rem;
+}
+.modalCopyWrap .modalCopy {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #001436;
+}
+
+.cta {
+  background: #002769;
+  box-sizing: border-box;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 80px;
+  border-radius: 5px;
+}
+.cta .image {
+  flex: 0 0 40%;
+  display: flex;
+  justify-content: center;
+}
+.cta .image svg {
+  width: auto;
+  height: 200px;
+}
+.cta .image svg path,
+.cta .image svg polygon {
+  fill: white;
+}
+.cta .copy {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.cta h3, .cta p {
+  color: white;
+  margin: 0;
+}
+.cta .btn {
+  background: white;
+  color: #001436;
+  margin: 20px 0 0;
+  width: 300px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,40 @@
+.cta {
+  background: $Blue2;
+  box-sizing: border-box;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 80px;
+  border-radius: 5px;
+  .image {
+    flex: 0 0 40%;
+    display: flex;
+    justify-content: center;
+    svg {
+      width: auto;
+      height: 200px;
+      // background: grey;
+      // border-radius: 99999px;
+      path,
+      polygon {
+        fill: white;
+      }
+    }
+  }
+  .copy {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  h3,p {
+    color: white;
+    margin: 0;
+  }
+  .btn {
+    background: white;
+    color: $Blue1;
+    margin: 20px 0 0;
+    width: 300px;
+  }
+}

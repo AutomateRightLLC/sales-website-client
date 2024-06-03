@@ -2,6 +2,8 @@
 
 import {useEffect, useState} from 'react';
 
+import CTA from './CTA';
+
 import EnterpriseArchitecture from './services/EnterpriseArchitecture';
 import MachineLearning from './services/MachineLearning';
 import QAAutomation from './services/QAAutomation';
@@ -19,12 +21,12 @@ const Modal = (props: {
   //   setShowModal(false);
   // }
 
-  useEffect(() => {
-    if (props.service) {
-      console.log(props.service);
-      props.toggleShowModal();
-    }
-  }, [props]);
+  // useEffect(() => {
+  //   if (props.service) {
+  //     console.log(props.service);
+  //     props.toggleShowModal();
+  //   }
+  // }, [props]);
 
   return (
     <div className={props.showModal ? 'modal show' : 'modal'}>
@@ -44,16 +46,7 @@ const Modal = (props: {
             <SoftwareDevelopment />
           )}
         </div>
-        <div className="cta">
-          <div className="image">
-            <div className="imagePlaceholder"></div>
-          </div>
-          <div className="copy">
-            <h3>Shift Left to Automate Right.</h3>
-            <p>Schedule a consultation and discover how we can accelerate your success.</p>
-            <a className="btn" href="mailto:sales@automateright.net">Schedule Discovery</a>
-          </div>
-        </div>
+        <CTA />
       </div>
     </div>
   );
