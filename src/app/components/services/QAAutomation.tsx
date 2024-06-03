@@ -3,7 +3,7 @@
 const QAAutomation = () => {
   return (
     <>
-      <h2>Enhance Your Software Quality with Quality Assurance Automation as a Service (QAaaS)</h2>
+      <h2>Quality Assurance Automation</h2>
       <p><strong>Ensure Excellence, Efficiency, and Reliability</strong></p>
       <p>In today's fast-paced digital world, maintaining high software quality is essential for success. Our Quality Assurance Automation as a Service (QAaaS) offering helps your organization achieve flawless software delivery by leveraging advanced automation techniques and expert QA insights. With our service, you can ensure your software meets the highest standards of quality, performance, and reliability.</p>
 

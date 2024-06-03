@@ -3,7 +3,7 @@
 const SoftwareDevelopment = () => {
   return (
     <>
-      <h2>Drive Innovation with Software Development as a Service (SDaaS)</h2>
+      <h2>Software Development</h2>
       <p><strong>Custom Solutions, Agile Methodologies, and Expert Development</strong></p>
       <p>In a rapidly evolving digital landscape, having robust and scalable software is essential for maintaining a competitive edge. Our Software Development as a Service (SDaaS) offering provides your organization with custom software solutions tailored to meet your unique needs. Leveraging agile methodologies and our team of expert developers, we help you accelerate innovation, optimize processes, and deliver exceptional user experiences.</p>
 

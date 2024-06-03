@@ -4,7 +4,7 @@
 const EnterpriseArchitecture = () => {
   return (
     <>
-      <h2>Transform Your Business with Enterprise Architecture as a Service (EAaaS)</h2>
+      <h2>Enterprise Architecture</h2>
       <p><strong>Unlock Strategic Alignment, Agility, and Innovation</strong></p>
       <p>In today's rapidly evolving business landscape, maintaining a robust and agile enterprise architecture (EA) is critical for aligning your IT strategy with business goals, driving innovation, and staying ahead of the competition. Our Enterprise Architecture as a Service (EAaaS) offering empowers your organization to seamlessly navigate these challenges with expert guidance, tailored solutions, and continuous support.</p>
 

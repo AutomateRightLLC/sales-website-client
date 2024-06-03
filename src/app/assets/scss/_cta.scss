@@ -1,12 +1,13 @@
 .cta {
-  background: $Blue2;
+  background: #9aa8b7;
   box-sizing: border-box;
-  padding: 100px;
+  padding: 40px;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   gap: 40px;
-  margin-top: 80px;
-  border-radius: 5px;
+  margin: 20px -20px -20px;
+  overflow: hidden;
   .image {
     flex: 0 0 40%;
     display: flex;
@@ -35,6 +36,16 @@
     background: white;
     color: $Blue1;
     margin: 20px 0 0;
-    width: 300px;
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 768px) {
+  .cta {
+    gap: 20px;
+    flex-direction: row;
+    padding: 60px;
+    border-radius: 5px;
+    margin-top: 40px;
   }
 }

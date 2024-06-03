@@ -14,15 +14,15 @@
     transition: all 0.5s ease-in-out;
   }
   .close {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     background: $Red;
     padding: 0;
     flex: 0 0 60px;
     overflow: hidden;
     position: fixed;
-    top: 15px;
-    right: 15px;
+    top: 10px;
+    right: 10px;
     justify-self: flex-end;
     border: none;
     border-radius: 99999px;
@@ -58,26 +58,35 @@
 
 .modalCopyWrap {
   box-sizing: border-box;
-  padding: 40px;
-  margin: 40px;
+  padding: 20px;
+  margin: 20px;
   border-radius: 10px;
-  background: white;
+  background: #eaf0f5;
   position: relative;
   h1,h2,h3,p,ul {
     color: $Blue1;
   }
   h2 {
-    font-size: 3rem;
+    font-size: 2rem;
+    margin-top: 0;
   }
   h3 {
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
   ul {
+    margin: 0;
+    padding: 0 0 0 20px;
     li {
       margin: 20px 0;
+      font-size: 1rem;
     }
     strong {
       display: block;
+    }
+  }
+  p {
+    font-size: 1rem;
+    strong {
       font-size: 1.2rem;
     }
   }
@@ -85,5 +94,38 @@
     max-width: 800px;
     margin: 0 auto;
     color: $Blue1;
+  }
+}
+
+@media (min-width: 768px) {
+  .modal {
+    .close {
+      width: 60px;
+      height: 60px;
+      top: 15px;
+      right: 15px;
+    }
+  }
+  .modalCopyWrap {
+    padding: 40px;
+    margin: 40px;
+    h2 {
+      font-size: 3rem;
+    }
+    h3 {
+      font-size: 2rem;
+    }
+    ul {
+      padding: 0 30px;
+      li {
+        font-size: 1.1rem;
+        strong {
+          font-size: 1.2rem;
+        }
+      }
+    }
+    p {
+      font-size: 1.1rem;
+    }
   }
 }

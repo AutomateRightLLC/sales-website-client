@@ -3,7 +3,7 @@
 const MachineLearning = () => {
   return (
     <>
-      <h2>Revolutionize Your Business with Machine Learning as a Service (MLaaS)</h2>
+      <h2>Machine Learning</h2>
       <p><strong>Harness the Power of Data-Driven Insights and Automation</strong></p>
       <p>In an era where data is the new oil, leveraging machine learning (ML) is essential for gaining a competitive edge. Our Machine Learning as a Service (MLaaS) offering empowers your organization to transform raw data into actionable insights, automate complex processes, and drive innovation with ease.</p>
 

@@ -46,7 +46,7 @@ a {
 .btn {
   background: #001436;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1rem;
   letter-spacing: 2px;
   text-transform: uppercase;
   box-sizing: border-box;
@@ -233,15 +233,15 @@ button.link:hover {
   transition: all 0.5s ease-in-out;
 }
 .modal .close {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   background: #e46d5d;
   padding: 0;
   flex: 0 0 60px;
   overflow: hidden;
   position: fixed;
-  top: 15px;
-  right: 15px;
+  top: 10px;
+  right: 10px;
   justify-self: flex-end;
   border: none;
   border-radius: 99999px;
@@ -274,26 +274,37 @@ button.link:hover {
 
 .modalCopyWrap {
   box-sizing: border-box;
-  padding: 40px;
-  margin: 40px;
+  padding: 20px;
+  margin: 20px;
   border-radius: 10px;
-  background: white;
+  background: #eaf0f5;
   position: relative;
 }
 .modalCopyWrap h1, .modalCopyWrap h2, .modalCopyWrap h3, .modalCopyWrap p, .modalCopyWrap ul {
   color: #001436;
 }
 .modalCopyWrap h2 {
-  font-size: 3rem;
+  font-size: 2rem;
+  margin-top: 0;
 }
 .modalCopyWrap h3 {
-  font-size: 2rem;
+  font-size: 1.4rem;
+}
+.modalCopyWrap ul {
+  margin: 0;
+  padding: 0 0 0 20px;
 }
 .modalCopyWrap ul li {
   margin: 20px 0;
+  font-size: 1rem;
 }
 .modalCopyWrap ul strong {
   display: block;
+}
+.modalCopyWrap p {
+  font-size: 1rem;
+}
+.modalCopyWrap p strong {
   font-size: 1.2rem;
 }
 .modalCopyWrap .modalCopy {
@@ -302,15 +313,46 @@ button.link:hover {
   color: #001436;
 }
 
+@media (min-width: 768px) {
+  .modal .close {
+    width: 60px;
+    height: 60px;
+    top: 15px;
+    right: 15px;
+  }
+  .modalCopyWrap {
+    padding: 40px;
+    margin: 40px;
+  }
+  .modalCopyWrap h2 {
+    font-size: 3rem;
+  }
+  .modalCopyWrap h3 {
+    font-size: 2rem;
+  }
+  .modalCopyWrap ul {
+    padding: 0 30px;
+  }
+  .modalCopyWrap ul li {
+    font-size: 1.1rem;
+  }
+  .modalCopyWrap ul li strong {
+    font-size: 1.2rem;
+  }
+  .modalCopyWrap p {
+    font-size: 1.1rem;
+  }
+}
 .cta {
-  background: #002769;
+  background: #9aa8b7;
   box-sizing: border-box;
-  padding: 100px;
+  padding: 40px;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   gap: 40px;
-  margin-top: 80px;
-  border-radius: 5px;
+  margin: 20px -20px -20px;
+  overflow: hidden;
 }
 .cta .image {
   flex: 0 0 40%;
@@ -338,7 +380,17 @@ button.link:hover {
   background: white;
   color: #001436;
   margin: 20px 0 0;
-  width: 300px;
+  max-width: 300px;
+}
+
+@media (min-width: 768px) {
+  .cta {
+    gap: 20px;
+    flex-direction: row;
+    padding: 60px;
+    border-radius: 5px;
+    margin-top: 40px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
